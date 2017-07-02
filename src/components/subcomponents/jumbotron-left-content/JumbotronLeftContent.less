@@ -1,24 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 
-const JumbortronLeftContent = (props) => {
+.jumbotron {
+  margin-bottom: 0 !important;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("../../../images/bg-sample.jpg");
 
-  return (
-    <div>
-      <section className="jumbotron text-center">
-        <div className="container">
-          <h1 className="jumbotron-heading">{props.heading}</h1>
-          <p className="lead text-muted">{props.para}</p>
-        </div>
-      </section>
-    </div>
-  );
+}
 
-};
+.jumbotron .container {
+  width: 20em;
+  text-align: left;
+  margin-right: 0;
+  color: #fff;
 
-JumbortronLeftContent.propTypes = {
-  heading: PropTypes.string,
-  para:PropTypes.string
-};
+}
 
-export default JumbortronLeftContent;
+.jumbotron h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color:rgba(0, 0, 0, 0.5);
+}
