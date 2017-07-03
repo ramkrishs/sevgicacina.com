@@ -6,10 +6,9 @@ const JumbortronLeftContent = (props) => {
 
   return (
     <div>
-      <section className="jumbotron text-center">
+      <section className="jumbotron jumbotron-left-content text-center">
         <div className="container">
           <h1 className="jumbotron-heading">{props.heading}</h1>
-          <h2></h2>
           <p className="lead text-muted">{props.para}</p>
         </div>
       </section>
